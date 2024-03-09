@@ -10,7 +10,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'https://anony-chat-nine.vercel.app',
+        origin: 'https://anony-chat-front.vercel.app/',
         methods: ["GET", "POST"],
     },
 })

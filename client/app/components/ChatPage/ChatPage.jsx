@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 
 //instances
 
-const socket = io('https://anony-chat-backend.vercel.app/')
+const socket = io('https://anony-chat-backend.vercel.app');
 
 export default function ChatPage() {
 

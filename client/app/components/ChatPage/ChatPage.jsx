@@ -9,7 +9,7 @@ const socket = io('https://anony-chat-backend.vercel.app/')
 
 export default function ChatPage() {
 
-    const [messages, setMessage]:any = useState([]);
+    const [messages, setMessage] = useState([]);
     const [messageInput, setMessageInput] =useState('');
 
     useEffect(() => {

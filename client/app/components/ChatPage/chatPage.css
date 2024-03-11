@@ -1,0 +1,15 @@
+.userCnt {
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.userCnt p {
+    color: var(--subHeadColor);
+    position: fixed;
+    z-index: 10;
+}
+
+.green {
+    color: #18f86a;
+}

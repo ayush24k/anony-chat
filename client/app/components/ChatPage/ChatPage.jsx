@@ -1,16 +1,16 @@
 'use client'
-
+import './chatPage.css'
 import { useState, useEffect } from "react";
 import io from 'socket.io-client';
 
 //instances
 
-const socket = io('https://anony-chat-backend.vercel.app');
+const socket = io('http://localhost:5000');
 
 export default function ChatPage() {
 
     const [messages, setMessage] = useState([]);
-    const [messageInput, setMessageInput] =useState('');
+    const [messageInput, setMessageInput] = useState('');
 
     useEffect(() => {
         socket.on('message', (message) => {
@@ -37,31 +37,34 @@ export default function ChatPage() {
         socket.on('userCount', (userCount) => {
             setUserCount(userCount);
         })
-        
+
     }, [userCount])
 
 
-  return (
-    <div>
-        <h1>Simple Chat App</h1>
+    return (
+        <div className='container'>
+            <div className='userCnt'>
+                <p>user online : <span className='green'>{userCount}</span></p>
+            </div>
 
-        <p>user count : {userCount}</p>
 
-        <input type="text" value={messageInput} placeholder="Type your message..."
-        onChange={(e) => setMessageInput(e.target.value) }
-        />
+            {/* rendering all the messages */}
 
-        <button onClick={sendMessage}>Send Message</button>
+            <section className='messages'>
+                {messages.map((message, index) => (
+                    <div key={index}>
+                        {message}
+                    </div>
+                ))}
+            </section>
 
-        {/* rendering all the messages */}
+            <div className='messageBox'>
+                <input className='inputArea' type="text" value={messageInput} placeholder="Type your message..."
+                    onChange={(e) => setMessageInput(e.target.value)}
+                />
 
-        <section>
-            {messages.map((message, index) => (
-                <div key={index}>
-                    {message}
-                </div>
-            ))}
-        </section>
-    </div>
-  )
+                <button className="sendButton"onClick={sendMessage}>Send</button>
+            </div>
+        </div>
+    )
 }

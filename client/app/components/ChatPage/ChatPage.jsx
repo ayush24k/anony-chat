@@ -42,7 +42,7 @@ export default function ChatPage() {
 
 
     return (
-        <div className='container'>
+        <div className='container chatContainer'>
             <div className='userCnt'>
                 <p>user online : <span className='green'>{userCount}</span></p>
             </div>
@@ -50,20 +50,24 @@ export default function ChatPage() {
 
             {/* rendering all the messages */}
 
-            <section className='messages'>
-                {messages.map((message, index) => (
-                    <div key={index}>
-                        {message}
-                    </div>
-                ))}
-            </section>
+            <div className='chatPage'>
+
+                <div className='messages'>
+                    {messages.map((message, index) => (
+                        <div key={index}>
+                            {message}
+                        </div>
+                    ))}
+                </div>
+                
+            </div>
 
             <div className='messageBox'>
                 <input className='inputArea' type="text" value={messageInput} placeholder="Type your message..."
                     onChange={(e) => setMessageInput(e.target.value)}
                 />
 
-                <button className="sendButton"onClick={sendMessage}>Send</button>
+                <button className="sendButton green" onClick={sendMessage}>Send</button>
             </div>
         </div>
     )

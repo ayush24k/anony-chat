@@ -13,3 +13,36 @@
 .green {
     color: #18f86a;
 }
+
+.chatPage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.messageBox {
+    display: flex;
+    gap: 5px;
+    position: sticky;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    bottom: 0;
+    background-color: black;
+}
+
+.messageBox input {
+    color: white;
+    border: 1px white dotted;
+    background-color: black;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+.messageBox button {
+    border: 1px white dotted;
+    background-color: black;
+    padding: 6px;
+    margin-top: 6px;
+}

@@ -20,6 +20,17 @@ nav {
     text-decoration: none;
 }
 
+.navHero {
+    display: flex;
+    align-items: center;
+}
+
+.navHero img {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 50px;
+}
+
 
 .navHero p {
     align-items: center;

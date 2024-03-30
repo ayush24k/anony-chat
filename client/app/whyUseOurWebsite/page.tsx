@@ -16,11 +16,11 @@ export default function page() {
               - it will make me happy :).
             </ul>
             <ul>
-              - your chat is completely safe and gets deleted after every session.(i didnt put efforts to set up an database to store messages)
+              - your chat is completely safe and gets deleted after every session.(actually i didnt put efforts to set up an database to store messages)
             </ul>
           </li>
         </div>
-        <img src="/Image.png" />
+        <img src="/guts.png" />
         <div className="whyLink">
           <Link href="/" className="link">return to chat page</Link>
         </div>

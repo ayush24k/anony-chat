@@ -1,6 +1,6 @@
 .pageContainer {
-    padding: 10px;
-    height: 60vh;
+    padding: 20px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,10 +8,28 @@
 }
 
 .whyHeading {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.8rem;
 }
 
 li {
+    margin-top: 0.2rem;
     color: var(--subHeadColor);
     list-style: none;
+}
+
+img {
+    padding: 20px;
+    margin-top: 10px;
+    height: 300px;
+    width: 500px;
+}
+
+.whyLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    color: #18f86a;
 }

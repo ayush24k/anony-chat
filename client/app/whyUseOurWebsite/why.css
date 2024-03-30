@@ -1,0 +1,17 @@
+.pageContainer {
+    padding: 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyHeading {
+    margin-bottom: 0.1rem;
+}
+
+li {
+    color: var(--subHeadColor);
+    list-style: none;
+}

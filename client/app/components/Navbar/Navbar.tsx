@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './nav.css';
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
                     <p className='NavHeading'>Open Net</p>
                 </div>
 
-                <a>Why Use Our Website??</a>
+                <Link href="/whyUseOurWebsite" className='navLink'>Why Use Our Website??</Link>
             </div>
         </nav>
     )

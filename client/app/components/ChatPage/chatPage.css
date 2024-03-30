@@ -2,6 +2,7 @@
     padding: 10px;
     display: flex;
     justify-content: end;
+    margin-bottom: 15px;
 }
 
 .userCnt p {
@@ -38,6 +39,7 @@
     background-color: black;
     padding: 6px;
     margin-top: 6px;
+    width: 100%;
 }
 
 .messageBox button {
@@ -45,4 +47,5 @@
     background-color: black;
     padding: 6px;
     margin-top: 6px;
+    width: 20%;
 }

@@ -54,20 +54,21 @@ export default function ChatPage() {
 
                 <div className='messages'>
                     {messages.map((message, index) => (
-                        <div key={index}>
+                        <div key={index} className='message'>
                             {message}
                         </div>
                     ))}
                 </div>
-                
-            </div>
-            
-            <div className='messageBox'>
-                <input className='inputArea' type="text" value={messageInput} placeholder="Type your message..."
-                    onChange={(e) => setMessageInput(e.target.value)}
-                />
 
-                <button className="sendButton green" onClick={sendMessage}>Send</button>
+            </div>
+
+            {/* <div className='messageBoxHolder'></div> */}
+                <div className='messageBox'>
+                    <input className='inputArea' type="text" value={messageInput} placeholder="Type your message..."
+                        onChange={(e) => setMessageInput(e.target.value)}
+                    />
+
+                    <button className="sendButton green" onClick={sendMessage}>Send</button>
             </div>
         </div>
     )

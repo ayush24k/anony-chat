@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav>
             <div className='navigation container'>
                 <div className='navHero'>
-                    <img src='/openNet.png'/>
+                    {/* <img src='/openNet.png' alt='logo'/> */}
                     <p className='NavHeading'>Open Net</p>
                 </div>
 

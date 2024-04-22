@@ -22,6 +22,23 @@
     padding-right: 10px;
 }
 
+/* .messages {
+    scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    z-index: -1;
+}
+
+
+.messageBoxHolder {
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+} */
+
 .messageBox {
     display: flex;
     gap: 5px;

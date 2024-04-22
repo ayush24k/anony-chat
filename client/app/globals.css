@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
     -webkit-font-smoothing: inherit;
+    scroll-behavior: smooth;
 }
 
 body {

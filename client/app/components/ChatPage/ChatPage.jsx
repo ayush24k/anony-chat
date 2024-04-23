@@ -63,7 +63,7 @@ export default function ChatPage() {
             </div>
 
             {/* <div className='messageBoxHolder'></div> */}
-                <div className='messageBox'>
+            <div className='messageBox'>
                     <input className='inputArea' type="text" value={messageInput} placeholder="Type your message..."
                         onChange={(e) => setMessageInput(e.target.value)}
                     />

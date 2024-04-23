@@ -21,7 +21,7 @@ export default function page() {
               </ul>
             </li>
           </div>
-          <img src="/guts.png" />
+          <img className="whyImg" src="/guts.png" />
           <div className="whyLink">
             <Link href="/" className="link">return to chat page</Link>
           </div>

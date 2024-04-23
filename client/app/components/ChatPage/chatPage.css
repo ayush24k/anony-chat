@@ -2,7 +2,7 @@
     padding: 10px;
     display: flex;
     justify-content: end;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .userCnt p {
@@ -12,7 +12,7 @@
 }
 
 .green {
-    color: #18f86a;
+    color: var(--green);
 }
 
 .chatPage {
@@ -31,13 +31,7 @@
 }
 
 
-.messageBoxHolder {
-    position: absolute;
-    padding-bottom: 10px;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-} */
+*/
 
 .messageBox {
     display: flex;

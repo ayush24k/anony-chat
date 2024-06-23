@@ -2,7 +2,7 @@ under construction 🚧
 <hr>
 
 front end is up: <br>
-https://anony-chat-front-htjsuo1xc-ayush-anshus-projects.vercel.app/
+https://anony-chat-front.vercel.app/
 
 <br>
 facing problem with setting up the backend will fix that soon 🍋:

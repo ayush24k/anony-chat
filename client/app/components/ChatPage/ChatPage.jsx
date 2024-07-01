@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 
 //instances
 
-const socket = io();
+const socket = io('https://anony-chat.onrender.com');
 
 export default function ChatPage() {
 

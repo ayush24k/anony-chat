@@ -3,6 +3,8 @@ import { createServer } from 'node:http'
 import { Server } from 'socket.io';
 import cors from 'cors';
 import { Socket } from 'node:dgram';
+import env from 'dotenv';
+env.config();
 
 // configuration
 
@@ -10,7 +12,6 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:3000',
         methods: ["GET", "POST"],
     },
 })

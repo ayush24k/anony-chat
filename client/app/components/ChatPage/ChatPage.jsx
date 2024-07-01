@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 
 //instances
 
-const socket = io('http://localhost:5000');
+const socket = io();
 
 export default function ChatPage() {
 

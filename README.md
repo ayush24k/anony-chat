@@ -1,8 +1,3 @@
-under construction 🚧
-<hr>
+### Open Net (anonymous chat application)
 
-front end is up: <br>
-https://anony-chat-front.vercel.app/
-
-<br>
-facing problem with setting up the backend will fix that soon 🍋:
+Web App is Live at: https://anony-chat-front.vercel.app/

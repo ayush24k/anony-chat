@@ -17,7 +17,7 @@ export default function page() {
                 - it will make me happy :).
               </ul>
               <ul>
-                - your chat is completely safe and gets deleted after every session.(actually i didnt put efforts to set up an database to store messages)
+                - your chat is completely safe and gets deleted after every session.(actually i didnt put efforts to set up a database to store your messages)
               </ul>
             </li>
           </div>
